@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
             <div className="relative">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/20 ring-4 ring-primary/10">
                 <img
-                  src="src/assets/AmineElHammoutii.jpeg"
+                  src="/AmineElHammoutii.jpeg"
                   alt="Amine El Hammouti"
                   className="w-full h-full object-cover"
                 />

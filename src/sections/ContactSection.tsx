@@ -14,8 +14,6 @@ const ContactSection: React.FC = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -25,12 +23,10 @@ const ContactSection: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitError('');
     
     try {
       // Submit form data to Firebase
       await submitContactForm(formData);
-      setSubmitSuccess(true);
       alert('Your message has been sent successfully!');
       
       // Reset form
@@ -42,7 +38,6 @@ const ContactSection: React.FC = () => {
       });
     } catch (error) {
       console.error('Error submitting form:', error);
-      setSubmitError('Failed to send message. Please try again later.');
       alert('Failed to send message. Please try again later.');
     } finally {
       setIsSubmitting(false);
