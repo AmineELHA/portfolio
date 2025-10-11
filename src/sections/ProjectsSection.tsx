@@ -22,12 +22,16 @@ const ProjectsSection: React.FC = () => {
               <p>E-commerce application built with React and Node.js. A comprehensive platform for managing products, orders, and customers with a focus on user experience.</p>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" onClick={(e) => {
-                e.preventDefault();
-                window.open('https://github.com/assimelha/pigier', '_blank');
-              }}>
-                View Project
-              </Button>
+              <Button 
+            variant="outline" 
+            size="lg"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open('https://github.com/AmineELHA', '_blank');
+            }}
+          >
+            View Projects
+          </Button>
             </CardFooter>
           </Card>
           
@@ -43,9 +47,9 @@ const ProjectsSection: React.FC = () => {
             <CardFooter>
               <Button variant="outline" onClick={(e) => {
                 e.preventDefault();
-                window.open('https://github.com/assimelha/task-management', '_blank');
+                window.open('https://github.com/AmineELHA', '_blank');
               }}>
-                View Project
+                View Projects
               </Button>
             </CardFooter>
           </Card>
@@ -62,9 +66,9 @@ const ProjectsSection: React.FC = () => {
             <CardFooter>
               <Button variant="outline" onClick={(e) => {
                 e.preventDefault();
-                window.open('https://github.com/assimelha/weather-dashboard', '_blank');
+                window.open('https://github.com/AmineELHA', '_blank');
               }}>
-                View Project
+                View Projects
               </Button>
             </CardFooter>
           </Card>
